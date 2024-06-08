@@ -1,0 +1,68 @@
+:root{
+    background-color: #121212;
+    padding: 2rem 1rem;
+    font-size: 18px;
+    color: white;
+    --red:  #FF0000;
+}
+form{
+    margin: auto;
+    display: flex;
+    justify-content: center;    
+}
+input{
+    padding: 1em;
+    border: 3px solid var(--red);
+    border-radius: 5px 0 0 5px;
+    width: 40%;
+    background-color: #333333;
+    float: left;
+    color: white
+}
+::placeholder{
+    color: white
+}
+.search_btn{
+    background-color: var(--red);
+    width: 50px;
+    display: grid;
+    align-items: center;
+    border: 3px solid var(--red);
+    border-radius: 0  5px  5px 0;
+    cursor: pointer;
+}
+.icon{
+    width: 2em;
+}
+
+.video_displayer{
+  margin: 5em auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.yt_container{
+    position: relative;
+    
+}
+.thumbnail{
+  height: 79px;  
+  width: 140px ;
+ 
+}
+.info{
+  display: flex;
+  align-items: start;
+  margin-left: .5em;
+  flex-direction: column;
+}
+.duration{
+    font-size: 14px;
+    padding: 1px;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    right:0;
+ 
+}

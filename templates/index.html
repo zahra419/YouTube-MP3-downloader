@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>YT Downloader</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+<body>
+    
+    
+    <form method="get">
+    <input placeholder="Search" name="ytvideo"/>
+    <button type="submit" class="search_btn" onclick="search()">
+        <img class="icon"  src="{{url_for('static',filename='search_icon.svg')}}"/>
+    </button>
+</form>
+{% if show == True  %}
+<div class="video_displayer">
+    <div class="yt_container">
+        <img class="thumbnail" src="{{thumbnail}}"/>
+        <span class="duration">{{length}}</span>
+    </div>
+    <div class="info">
+        <span>{{title}}</span>
+        <div> by <small>{{author}}</small></div>
+    </div>
+</div> 
+{% endif %}
+
+</body>
+<script>
+    document.getElementsByTagName('button').onclick=function(){
+        document.getElementsByTagName('input').value=""
+    }
+    
+</script>
+</html>
